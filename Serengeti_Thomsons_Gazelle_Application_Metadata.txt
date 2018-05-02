@@ -1,0 +1,40 @@
+Camera
+Index of which camera the rows correspond to.
+
+TimePeriod
+Index of which 8-day time period the row corresponds to.
+
+NDVI
+Normalized Difference Vegetation Index (NDVI) obtained from NASA’s Moderate Resolution Imaging Spectroradiometer (MODIS) operating on the Terra satellite platform.  NDVI is a measure of vegetation greenness and is a proxy for the quantity of vegetation integrated over the entire pixel area (250 square meters).
+
+Rain
+An indicator variable that = 1 if the total monthly rainfall of the starting date of the 8-day window exceeded 100mm and = 0 otherwise.  Rainfall was quantified with Decagon Devices (Pullman, WA) ERCN-100 tipping spoon rain gauge (1 tip = 0.2 mm).
+
+River Distance
+Distance from the camera to the nearest river, extracted from each camera trap from a GIS layer for the region as described in:
+
+Hopcraft, J. G. C., Sinclair, A. R. E., & Packer, C. (2005). Planning for success: Serengeti lions seek prey accessibility rather than abundance. Journal of Animal Ecology, 74(3), 559-566
+
+Sparse Tree
+An indicator variable taking value 1 when the number of trees > 2m in height within 50m of each camera is between 1-10 trees.
+
+Moderate Tree
+An indicator variable taking value 1 when the number of trees > 2m in height within 50m of each camera is between 11-30 trees.
+
+Dense Tree
+An indicator variable taking value 1 when the number of trees > 2m in height within 50m of each camera is greater than 30 trees
+
+Latitude
+Degrees N
+
+Longitude
+Degrees E
+
+Days
+The number of days (integer between 0 and 8) that the particular camera was on and functioning during the 8-day period.
+
+Forest
+An indicator variable taking value 1 when the number of trees > 2m in height within 50m of each camera is greater than 10 trees.  Equivalently, this variable takes value 1 exactly for moderate and dense tree designations.
+
+Thomson's Gazelle
+An indicator variable taking value 1 when a Thomson's gazelle was observed at the camera trap and during the 8-day time period.
